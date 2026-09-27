@@ -66,12 +66,12 @@ EMAIL_RECEIVER="tu_correo_destino@gmail.com"
 ---
 
 ## 🚀 Uso del Monitor
-# Ejecución estándar en consola
+### Ejecución estándar en consola
 Para iniciar el monitor en primer plano:
 ```text
 python main.py
 ```
-# Ejecución en segundo plano (Windows)
+### Ejecución en segundo plano (Windows)
 Si querés dejarlo corriendo en segundo plano sin mantener abierta la consola:
 ```text
 Start-Process pythonw main.py
@@ -87,5 +87,9 @@ New-Item STOP
 ```
 2. El script detectará la presencia del archivo en menos de un segundo, detendrá la ejecución, eliminará el archivo STOP y finalizará correctamente.
 
+---
+
+## 📝 Licencia
+Este proyecto está bajo la Licencia MIT. Libre para uso, modificación y distribución.
 ---
 
