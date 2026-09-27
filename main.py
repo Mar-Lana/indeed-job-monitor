@@ -44,6 +44,14 @@ def send_email(new_jobs):
     if not new_jobs:
         return
 
+    if not EMAIL_SENDER or not EMAIL_PASSWORD or not EMAIL_RECEIVER:
+        print("❌ EMAIL_SENDER, EMAIL_PASSWORD y EMAIL_RECEIVER deben estar configurados")
+        return
+
+    sender = EMAIL_SENDER
+    password = EMAIL_PASSWORD
+    receiver = EMAIL_RECEIVER
+
     subject = f"🔔 {len(new_jobs)} nueva(s) oferta(s) de trabajo encontrada(s)"
 
     body = "Se encontraron las siguientes ofertas nuevas:\n\n"
