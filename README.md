@@ -91,5 +91,6 @@ New-Item STOP
 
 ## 📝 Licencia
 Este proyecto está bajo la Licencia MIT. Libre para uso, modificación y distribución.
+
 ---
 
